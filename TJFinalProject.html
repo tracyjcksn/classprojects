@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alvin Ailey DC</title>
+
+    <style>
+      body {
+        background: radial-gradient(
+          859px at 10% 20%,
+          rgb(245, 220, 154) 0%,
+          rgb(164, 78, 51) 90%
+        );
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      section {
+        margin: 120px 0;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 48px;
+        font-weight: bolder;
+        margin: 0;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 30px;
+      }
+
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+
+      p {
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 15px 20px;
+      }
+
+      ul {
+        list-style: square;
+        list-style-position: inherit;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+      }
+
+      li {
+        line-height: initial;
+        margin: 10px 10px;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #e48a0d;
+        color: black;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+        text-decoration: none;
+      }
+
+      button:hover {
+        cursor: pointer;
+        background: #ffbb7b;
+        color: #3a0604;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Alvin Ailey Dance Company</h1>
+      <h2>Live to Dance. Dance to Live.</h2>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/007/227/original/alvin2.jpg?1618541960"
+        alt="Alvin Ailey Revelations"
+        width="650"
+      />
+      <br />
+
+      <p>
+        The mission of Alvin Ailey Dance Foundation is to further the pioneering
+        vision of the choreographer, dancer, and cultural leader Alvin Ailey by
+        building an extended cultural community which provides dance
+        performances, training and education, and community programs for all
+        people. This performing arts community plays a crucial social role,
+        using the beauty and humanity of the African-American heritage and other
+        cultures to unite people of all races, ages and backgrounds.
+      </p>
+
+      <p>
+        Mr. Ailey said, “I am trying to show the world we are all human beings,
+        that color is not important, that what is important is the quality of
+        our work, of a culture in which the young are not afraid to take chances
+        and can hold onto their values and self-esteem, especially in the arts
+        and in dance. That’s what it’s all about to me.” His words inform the
+        organization’s core values:
+      </p>
+
+      <ul>
+        <li>Reaching Excellence Moved to Inspire – Inspired to Move</li>
+
+        <li>Build Community - Celebrate Diversity</li>
+
+        <li>Progress with Purpose - Perform with Respect</li>
+      </ul>
+      <br />
+      <p>
+        <a
+          href="https://www.alvinailey.org/about-us"
+          target="_blank"
+          class="learn-more"
+        >
+          For more information click here
+        </a>
+      </p>
+    </div>
+
+    <button class="danceButton">Love to Dance?</button>
+
+    <p>This page was built by Tracy Jackson</p>
+
+    <script>
+      function dance() {
+        let name = prompt("What is your name?");
+        let dance = prompt("Do you know Alvin Ailey?");
+        if (dance === "yes") {
+          alert("Yes," + name + "! We do too!");
+        } else {
+          alert("We understand," + name + ". Dancing is not for everyone!");
+        }
+      }
+      let danceButton = document.querySelector(".danceButton");
+      danceButton.addEventListener("click", dance);
+    </script>
+  </body>
+</html>
